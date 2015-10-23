@@ -1,26 +1,29 @@
 ## CODE BOOK
 
 ###Legend
-NA: Not Applicable
-g: gravity units. 
+- NA: Not Applicable
+- g: gravity units. 
+- X: Values measured in the X-Axis
+- Y: Values measured in the Y-Axis
+- Z: Values measured in the Z-Axis
 
 ### Variables Definition
-|Variable Name   | Units  | Description  | Axis|   |
-|---|---|---|---|---|
-|Subject| NA  | Describe the subject that perform the activity  | Not Applicable  |   |
-|Activity|  NA  | Describe the activity perfomed when the data was recorded  | Not Applicable  |   |
-|tBodyAcc-mean()-X| g  |   | X  |   |
-|tBodyAcc-mean()-Y| g  |   | Y  |   |
-|tBodyAcc-mean()-Z| g  |   | Z  |   |
-|tBodyAcc-std()-X| g |   | X  |   |
-|tBodyAcc-std()-Y| g  |   | Y  |   |
-|tBodyAcc-std()-Z| g  |   | Z  |   |
+|Variable Name   | Units  | Description  | Axis| Source Type | Source Type Detail |
+|---|---|---|---|---|---|
+|Subject| NA  | Describe the subject that perform the activity  | NA  | Measure  |Data recorded directly from experiment|
+|Activity|  NA  | Describe the activity perfomed when the data was recorded  | NA  | Measure  |Data recorded directly from experiment|
+|tBodyAcc-mean()-X| g  | Mean of Body Acceleration Signal-X Axis | X  |Calculation|Total Accelaration - Gravity|
+|tBodyAcc-mean()-Y| g  | Mean of Body Acceleration Signal-Y Axis  | Y  |   |
+|tBodyAcc-mean()-Z| g  | Mean of Body Acceleration Signal-Z Axis  | Z  |   |
+|tBodyAcc-std()-X| g | Standard Desviation of Body Acceleration Signal-X Axis  | X  |   |
+|tBodyAcc-std()-Y| g  | Standard Desviation of Body Acceleration Signal-Y Axis  | Y  |   |
+|tBodyAcc-std()-Z| g  | Standard Desviation of Body Acceleration Signal-Z Axis  | Z  |   |
 |tGravityAcc-mean()-X|   | X  |   |   |
 |tGravityAcc-mean()-Y|   | Y  |   |   |
 |tGravityAcc-mean()-Z|   | Z  |   |   |
-|tGravityAcc-std()-X|   | X  |   |   |
-|tGravityAcc-std()-Y|   | Y  |   |   |
-|tGravityAcc-std()-Z|   | Z  |   |   |
+|tGravityAcc-std()-X|   |   | X  |   |
+|tGravityAcc-std()-Y|   |   | Y  |   |
+|tGravityAcc-std()-Z|   |   | Z  |   |
 |tBodyAccJerk-mean()-X| g  |   | X  |   |
 |tBodyAccJerk-mean()-Y| g  |   | Y  |   |
 |tBodyAccJerk-mean()-Z| g  |   | Z  |   |

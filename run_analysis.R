@@ -29,7 +29,7 @@
         Y_Consolidated <- rbind(Y_Test, Y_Train)
         Subject_Consolidated <- rbind(Subject_Test, Subject_Train)
 # Step 2: Extracts only the measurements on the mean and standard deviation for each measurement. 
-        LogicalVector <- grepl("mean|std",feature_label[,2])
+        LogicalVector <- grepl("\\bmean()\\b|\\bstd()\\b",feature_label[,2])
         X_Consolidated <- subset(X_Consolidated,select=LogicalVector)
 # Step 3: Uses descriptive activity names to name the activities in the data set
         NAct <- nrow(ActivityLabels)

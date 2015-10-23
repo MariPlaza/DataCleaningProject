@@ -37,6 +37,7 @@ Create 3 data sets, merging the training and the test sets. The 3 datasets creat
 
 #### Step 2: Extract relevant measurements
 Extracts only the measurements on the mean and standard deviation for each measurement from the X Consolidated vector. 
+**VERY IMPORTANT:** A very important point on this step is to use the exact match in grepl with \\b because there is a feature that ends in: meanFreq but it is not a calculated measure.  
 
 #### Step 3: Descriptive activity names
 Replace the code of the activities in dataframe Y for the corresponding descriptive activity names. 

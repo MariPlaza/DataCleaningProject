@@ -16,7 +16,7 @@ The original Data Set provides 28 txt files organized in several sub-folders. No
 |y_test.txt|Y_Test|./UCI HAR Dataset/test/|Contain the activity code from the test set. Its range is from 1 to 6.|   
 |y_train.txt|Y_Train|./UCI HAR Dataset/train/|Contain the activity code from the train set. Its range is from 1 to 6.|   
 
-Please view the section after Explanation of the Code for further details of the data and variables contained in the dataset. 
+The X_test and X_train files contain the measures calculated from the data stored in the Inertial Signals. Please view the section after Explanation of the Code for further details of the data and variables contained in the dataset. 
 
 ## EXPLANATION OF THE CODE
 The code is documented directly in the R File, nonetheless, here is provided a general structure of the code for better understanding. 

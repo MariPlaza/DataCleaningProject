@@ -34,8 +34,8 @@ Since the Consolidated_Data uses information from features contained in X (Pleas
 This section is a summary from the feature_info.txt in order to understand the meaing of the different features retrieved in the tidy data. For detailed information please referred directly to the file in the dataset.
 
 The transformation of the data are represented in the following image: 
- 
 
+file:///https://github.com/MariPlaza/DataCleaningProject/blob/master/Data_Transformation.jpg
 
 
 ###Legend
@@ -45,7 +45,7 @@ The transformation of the data are represented in the following image:
 - **Y:** Values measured in the Y-Axis
 - **Z:** Values measured in the Z-Axis
 - **t:** Time domain signals
-- **f:** Time domain signals
+- **f:** Frequency domain signals
 - **Jerk:** Time rate of change of acceleration. It is the acceleration of the acceleration. More information in this link:
 http://www.mmsonline.com/articles/understanding-jerk-control
 
@@ -86,52 +86,52 @@ http://www.mmsonline.com/articles/understanding-jerk-control
 |tBodyGyroJerk-std()-Y|Standard Desviation|Body Angular Acceleration(Jerk)| Y  |t   |Derived in Time from Body Angular Speed|
 |tBodyGyroJerk-std()-Z|Standard Desviation|Body Angular Acceleration(Jerk)| Z  |t   |Derived in Time from Body Angular Speed|
 |tBodyAccMag-mean()|Mean|Body Acceleration Magnitude| NA  |t   |Eucladian Norm applied to tBodyAcc|
-|tBodyAccMag-std()|Standard Desviation||Body Acceleration Magnitude|NA  |t   |Eucladian Norm applied to tBodyAcc|
-|tGravityAccMag-mean()|Mean|   |NA   |t   |Eucladian Norm applied to tGravityAcc|
-|tGravityAccMag-std()|Standard Desviation| NA  |   |t  |Eucladian Norm applied to tGravityAcc|
-|tBodyAccJerkMag-mean()|Mean|   | NA  |t   |Eucladian Norm applied to tBodyAccJerk|
-|tBodyAccJerkMag-std()|Standard Desviation|   | NA  |t   |Eucladian Norm applied to tBodyAccJerk|
-|tBodyGyroMag-mean()|Mean|   | NA  |t   |Eucladian Norm applied to tBodyAcc|
-|tBodyGyroMag-std()|Standard Desviation|   | NA  |t   |Eucladian Norm applied to tBodyAcc|
-|tBodyGyroJerkMag-mean()|Mean|   | NA  |t   |Eucladian Norm applied to tBodyAcc|
-|tBodyGyroJerkMag-std()|Standard Desviation|   |  NA |t   |Eucladian Norm applied to tBodyAcc|
-|fBodyAcc-mean()-X|Mean|Body Acceleration   | X  |f   |
-|fBodyAcc-mean()-Y|Mean|Body Acceleration   | Y |f   |
-|fBodyAcc-mean()-Z|Mean|Body Acceleration   | Z |f   |
-|fBodyAcc-std()-X|Standard Desviation|Body Acceleration   | X  |f   |
-|fBodyAcc-std()-Y|Standard Desviation|Body Acceleration   | Y  |f   |
-|fBodyAcc-std()-Z|Standard Desviation|Body Acceleration   | Z  |f   |
-|fBodyAcc-meanFreq()-X|Mean|   |  X |f   |
-|fBodyAcc-meanFreq()-Y|Mean|   |  Y |f   |
-|fBodyAcc-meanFreq()-Z|Mean|   |  Z |f   |
-|fBodyAccJerk-mean()-X|Mean|   |  X |f   |
-|fBodyAccJerk-mean()-Y|Mean|   |  Y |f   |
-|fBodyAccJerk-mean()-Z|Mean|   |  Z |f   |
-|fBodyAccJerk-std()-X|Standard Desviation|   | X  |f   |
-|fBodyAccJerk-std()-Y|Standard Desviation|   | Y  |f   |
-|fBodyAccJerk-std()-Z|Standard Desviation|   | Z  |f   |
-|fBodyAccJerk-meanFreq()-X|Mean|   |  X |f   |
-|fBodyAccJerk-meanFreq()-Y|Mean|   | Y  |f   |
-|fBodyAccJerk-meanFreq()-Z|Mean|   | Z  |f   |
-|fBodyGyro-mean()-X|Mean|   | X  |f  |
-|fBodyGyro-mean()-Y|Mean|   | Y  |f  |
-|fBodyGyro-mean()-Z|Mean|   | Z  |f  |
-|fBodyGyro-std()-X|Standard Desviation|   | X |f   |
-|fBodyGyro-std()-Y|Standard Desviation|   | Y |f   |
-|fBodyGyro-std()-Z|Standard Desviation|   | Z |f   |
-|fBodyGyro-meanFreq()-X|Mean|   | X |f   |
-|fBodyGyro-meanFreq()-Y|Mean|   | Y |f  |
-|fBodyGyro-meanFreq()-Z|Mean|   | Z |f   |
-|fBodyAccMag-mean()|Mean|   | NA |f   |
-|fBodyAccMag-std()|Standard Desviation|   | NA |f   |
-|fBodyAccMag-meanFreq()|Mean|   | NA |f   |
-|fBodyBodyAccJerkMag-mean()|Mean|   | NA |f   |
-|fBodyBodyAccJerkMag-std()|Standard Desviation|   | NA |f   |
+|tBodyAccMag-std()|Standard Desviation|Body Acceleration Magnitude|NA  |t   |Eucladian Norm applied to tBodyAcc|
+|tGravityAccMag-mean()|Mean|Gravity Acceleration Magnitude|NA   |t   |Eucladian Norm applied to tGravityAcc|
+|tGravityAccMag-std()|Standard Desviation|Gravity Acceleration Magnitude| NA  |t  |Eucladian Norm applied to tGravityAcc|
+|tBodyAccJerkMag-mean()|Mean|Body Angular Acceleration Magnitude| NA  |t   |Eucladian Norm applied to tBodyAccJerk|
+|tBodyAccJerkMag-std()|Standard Desviation|Body Angular Acceleration Magnitude| NA  |t   |Eucladian Norm applied to tBodyAccJerk|
+|tBodyGyroMag-mean()|Mean|Body Angular Speed Magnitude   | NA  |t   |Eucladian Norm applied to tBodyGyro|
+|tBodyGyroMag-std()|Standard Desviation|Body Angular Speed Magnitude| NA  |t   |Eucladian Norm applied to tBodyGyro|
+|tBodyGyroJerkMag-mean()|Mean|Body Angular Speed Magnitude| NA  |t   |Eucladian Norm applied to tBodyGyroJerk|
+|tBodyGyroJerkMag-std()|Standard Desviation|Body Angular Speed Magnitude|  NA |t   |Eucladian Norm applied to tBodyGyroJerk|
+|fBodyAcc-mean()-X|Mean|Body Acceleration| X  |f   |Fast Fouier Transformation from tBodyAcc|
+|fBodyAcc-mean()-Y|Mean|Body Acceleration| Y |f   |Fast Fouier Transformation from tBodyAcc|
+|fBodyAcc-mean()-Z|Mean|Body Acceleration| Z |f   |Fast Fouier Transformation from tBodyAcc|
+|fBodyAcc-std()-X|Standard Desviation|Body Acceleration   | X  |f   |Fast Fouier Transformation from tBodyAcc|
+|fBodyAcc-std()-Y|Standard Desviation|Body Acceleration   | Y  |f   |Fast Fouier Transformation from tBodyAcc|
+|fBodyAcc-std()-Z|Standard Desviation|Body Acceleration   | Z  |f   |Fast Fouier Transformation from tBodyAcc|
+|fBodyAcc-meanFreq()-X|Mean|   |  X |f   |Fast Fouier Transformation from |
+|fBodyAcc-meanFreq()-Y|Mean|   |  Y |f   |Fast Fouier Transformation from |
+|fBodyAcc-meanFreq()-Z|Mean|   |  Z |f   |Fast Fouier Transformation from |
+|fBodyAccJerk-mean()-X|Mean|Body Acceleration Jerk   |  X |f   |Fast Fouier Transformation from tBodyAccJerk|
+|fBodyAccJerk-mean()-Y|Mean|Body Acceleration Jerk   |  Y |f   |Fast Fouier Transformation from tBodyAccJerk|
+|fBodyAccJerk-mean()-Z|Mean|Body Acceleration Jerk   |  Z |f   |Fast Fouier Transformation from tBodyAccJerk|
+|fBodyAccJerk-std()-X|Standard Desviation|Body Acceleration Jerk   | X  |f   |Fast Fouier Transformation from tBodyAccJerk|
+|fBodyAccJerk-std()-Y|Standard Desviation|Body Acceleration Jerk   | Y  |f   |Fast Fouier Transformation from tBodyAccJerk|
+|fBodyAccJerk-std()-Z|Standard Desviation|Body Acceleration Jerk   | Z  |f   |Fast Fouier Transformation from tBodyAccJerk|
+|fBodyAccJerk-meanFreq()-X|Mean|   |  X |f   |Fast Fouier Transformation from |
+|fBodyAccJerk-meanFreq()-Y|Mean|   | Y  |f   |Fast Fouier Transformation from |
+|fBodyAccJerk-meanFreq()-Z|Mean|   | Z  |f   |Fast Fouier Transformation from |
+|fBodyGyro-mean()-X|Mean|Body Acceleration   | X  |f  |Fast Fouier Transformation from tBodyGyro|
+|fBodyGyro-mean()-Y|Mean|Body Acceleration   | Y  |f  |Fast Fouier Transformation from tBodyGyro|
+|fBodyGyro-mean()-Z|Mean|Body Acceleration   | Z  |f  |Fast Fouier Transformation from tBodyGyro|
+|fBodyGyro-std()-X|Standard Desviation|Body Acceleration   | X |f   |Fast Fouier Transformation from tBodyGyro|
+|fBodyGyro-std()-Y|Standard Desviation|Body Acceleration   | Y |f   |Fast Fouier Transformation from tBodyGyro|
+|fBodyGyro-std()-Z|Standard Desviation|Body Acceleration   | Z |f   |Fast Fouier Transformation from tBodyGyro|
+|fBodyGyro-meanFreq()-X|Mean|   | X |f   |Fast Fouier Transformation from |
+|fBodyGyro-meanFreq()-Y|Mean|   | Y |f  |Fast Fouier Transformation from |
+|fBodyGyro-meanFreq()-Z|Mean|   | Z |f   |Fast Fouier Transformation from |
+|fBodyAccMag-mean()|Mean|Body Acceleration Magnitude   | NA |f   |Fast Fouier Transformation from tBodyAccMag|
+|fBodyAccMag-std()|Standard Desviation|Body Acceleration Magnitude   | NA |f   |Fast Fouier Transformation from tBodyAccMag|
+|fBodyAccMag-meanFreq()|Mean|   | NA |f   |Fast Fouier Transformation from |
+|fBodyBodyAccJerkMag-mean()|Mean|Body Acceleration Jerk Magnitude   | NA |f   |Fast Fouier Transformation from tBodyAccJerkMag|
+|fBodyBodyAccJerkMag-std()|Standard Desviation|Body Acceleration Jerk Magnitude   | NA |f   |Fast Fouier Transformation from tBodyAccJerkMag|
 |fBodyBodyAccJerkMag-meanFreq()|Mean|  | NA |f   |
-|fBodyBodyGyroMag-mean()|Mean|   | NA  |f   |
-|fBodyBodyGyroMag-std()|Standard Desviation|   | NA |f   |
+|fBodyBodyGyroMag-mean()|Mean|Body Angular Speed Magnitude   | NA  |f   |Fast Fouier Transformation from tBodyGyroMag|
+|fBodyBodyGyroMag-std()|Standard Desviation|Body Angular Speed Magnitude   | NA |f   |Fast Fouier Transformation from tBodyGyroMag|
 |fBodyBodyGyroMag-meanFreq()|Mean|   | NA |f   |
-|fBodyBodyGyroJerkMag-mean()|Mean|   | NA |f   |
-|fBodyBodyGyroJerkMag-std()|Standard Desviation|   | NA |f   |
+|fBodyBodyGyroJerkMag-mean()|Mean|Body Angular Acceleration Magnitude   | NA |f   |Fast Fouier Transformation from tBodyGyroJerkMag|
+|fBodyBodyGyroJerkMag-std()|Standard Desviation|Body Angular Acceleration Magnitude   | NA |f   |Fast Fouier Transformation from tBodyGyroJerkMag|
 |fBodyBodyGyroJerkMag-meanFreq()|Mean|   | NA  |f   |
 

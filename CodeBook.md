@@ -35,8 +35,7 @@ This section is a summary from the feature_info.txt in order to understand the m
 
 The transformation of the data are represented in the following image: 
 
-file:///https://github.com/MariPlaza/DataCleaningProject/blob/master/Data_Transformation.jpg
-
+![alt text](https://github.com/MariPlaza/DataCleaningProject/blob/master/Data_Transformation.jpg "Data Transformation Diagram")
 
 ###Legend
 

@@ -1,6 +1,4 @@
-##  DataCleaningProject
-Data Cleaning Project Submission
-
+# DATA CLEANING PROJECT
 ## PURPOSE OF THE CODE AND INTRODUCTION TO THE DATA SET. 
 The purpose of this code is to prepare a tidy data for the experiment "Human Activity Recognition Using Smartphones Data Set" perfomed by Smartlab - Non Linear Complex Systems Laboratory. The complete explanation and dataset for this experiment is available at: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones. 
 
@@ -28,19 +26,24 @@ The code is divided in 6 Steps:
 This step performs the basic procedures to set-up the working environment to process appropiately the data. These procedure are: 
 - Checks if the neccesary libraries are installed and if not install them. It also upload all of them. 
 - Establish initial working directory
-- Download File from Internet source and read its content. 
+- Download File from Internet source, unzip and read its content. 
 - Read Information from txt files.         
+
 #### Step 1: Merging Datasets from train and test. 
 Create 3 data sets, merging the training and the test sets. The 3 datasets created are:
 - X (effective values)
 - Y (activity label) 
 - Subject(subject that runned the experiment).
+
 #### Step 2: Extract relevant measurements
 Extracts only the measurements on the mean and standard deviation for each measurement from the X Consolidated vector. 
+
 #### Step 3: Descriptive activity names
 Replace the code of the activities in dataframe Y for the corresponding descriptive activity names. 
+
 #### Step 4: Appropriately labels
 Name appropriately the columns of each dataframe and merge these dataframe through cbind to create the data consolidated dataframe. 
+
 #### Step 5: Create tidy data
 From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 To perform this operation, use the function melt to create a long dataset of all variables in the Data_Consolidated dataframe, then using the function ddply this step calculate the mean for each variable summarized by subject and activity, and finally use spread to get again a wide form of this tidy data. Finally the resulted dataframe is writed in the tidy_data.txt file. 
@@ -53,7 +56,7 @@ Contains 2 sub-folders and 4 .txt files. The information contained in the .txt f
 - **README.txt:** Explains the experiment and the dataset provided. 
 - **activity_labels.txt:** Contains the labels of the activities corresponding to each activity code. 
 - **features.txt:** Contains the name of the features calculated in the X file
-- **features_info.txt:** describe the selection of the features 
+- **features_info.txt:** Describes the selection of the features 
 
 ### MainFolder>test:
 - **subject_test.txt:** Contains the subjects from the test set
@@ -67,7 +70,7 @@ Contains 9 files, each file represents a 128 vector from the **test set** with d
 |---|---|---|---|---|---|
 |Acceleration Signal|Measured with Accelerometer|g|total_acc_x_test.txt|total_acc_y_test.txt|total_acc_z_test.txt| 
 |Body Acceleration Signal|Formula: Total_Acc-g|g|body_acc_x_test.txt|body_acc_y_test.txt|body_acc_z_test.txt| 
-|Angular velocity|Measured with gyroscope|radians/second|body_gyro_x_test.txt|body_gyro_y_test.txt|body_gyro_z_test.txt| 
+|Angular velocity|Measured with gyroscope|rad/s|body_gyro_x_test.txt|body_gyro_y_test.txt|body_gyro_z_test.txt| 
 
 ### MainFolder>train:
 - **subject_train.txt:** Contains the subjects from the train set
@@ -76,8 +79,9 @@ Contains 9 files, each file represents a 128 vector from the **test set** with d
 
 ### MainFolder>train>Inertial Signals:
 Contains 9 files, each file represents a 128 vector from the **train set** with data or calculation measured by the gyroscope or accelerometer from the smartphone.
+
 |Variable|Get from|Unit|File Name -X Axis|File Name -Y Axis| File Name -Z Axis| 
 |---|---|---|---|---|---|
 |Acceleration Signal|Measured with Accelerometer|g|total_acc_x_train.txt|total_acc_y_train.txt|total_acc_z_train.txt| 
 |Body Acceleration Signal|Formula: Total_Acc-g|g|body_acc_x_train.txt|body_acc_y_train.txt|body_acc_z_train.txt| 
-|Angular velocity|Measured with gyroscope|radians/second|body_gyro_x_train.txt|body_gyro_y_train.txt|body_gyro_z_train.txt| 
+|Angular velocity|Measured with gyroscope|rad/s|body_gyro_x_train.txt|body_gyro_y_train.txt|body_gyro_z_train.txt| 
